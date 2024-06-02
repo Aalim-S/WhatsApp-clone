@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Clone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="profileData.js" defer></script>
+  <script src="ProfileBodyData.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- WhatsApp header layout section-->
+  <header>
+    <div class="logo">
+      <i class="fa-brands fa-whatsapp"></i>
+      <p>WhatsApp</p>
+    </div>
+    <div class="close">
+      <i class="fa-solid fa-minus"></i>
+      <i class="fa-solid fa-window-restore"></i>
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+  </header>
+
+  <!-- WhatsApp body layout section -->
+  <section class="main">
+      <!-- WhatsApp left side layout section -->
+      <div class="message">
+        <div class="status">
+          <i class="fa-solid fa-comment-dots active"></i>
+          <i class="fa-solid fa-phone"></i>
+          <i class="fa-solid fa-circle-notch"></i>
+          <span></span>
+        </div>
+        <div class="star">
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-solid fa-box-archive"></i>
+          <hr id="hor">
+          <i class="fa-solid fa-gear"></i>
+          <p><img src="images/pimg2.jpeg" alt="dp"></p>
+        </div>
+      </div>
+
+      <!-- WhatsApp chat section  -->
+      <div class="chats">
+          <div class="clone-chat">
+            <div class="in-chats">
+               <p>Chats</p>
+            </div>
+            <div class="filter">
+               <i class="fa-solid fa-circle-plus"></i>
+               <i class="fa-solid fa-filter"></i>
+            </div>
+          </div>
+          <div class="input-1">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="text" class="Search" id="search-profile-name" placeholder="Search or start a new message">
+          </div>
+          <div class="box-container">
+          </div>
+      </div>
+
+      <!-- WhatsApp main message body section -->
+      <div class="encrypted">
+        <!-- WhatsApp profile info section   -->
+        <div class="user-info">
+          <div class="user-name">
+            <div class="user-info-popup" id="ok">
+              <div class="left-info-popup">
+                <div class="icon-overview">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <p>Overview</p>
+                </div>
+                <div class="icon-overview">
+                  <i class="fa-solid fa-photo-film"></i>
+                  <p>Media</p>
+                </div>
+                <div class="icon-overview">
+                  <i class="fa-regular fa-file"></i>
+                  <p>Files</p>
+                </div>
+                <div class="icon-overview">
+                  <i class="fa-solid fa-link"></i>
+                  <p>Links</p>
+                </div>
+                <div class="icon-overview">
+                  <i class="fa-solid fa-lock"></i>
+                  <p>Encryption</p>
+                </div>
+              </div>
+              <div class="right-info-popup">
+                <p id="popupimg"></p>
+                <p style="font-size: 20px; font-weight: 700;">#Aalim</p>
+                <p style="margin-top: 5px; font-size: 15px;">~#Aalim</p>
+                <p style="font-size: 13.5px; margin-top: 20px;">Phone number</p>
+                <p style="font-size: 13.5px; margin-top: 7px;">+91 8971******</p>
+                <p style="font-size: 13.5px; margin-top: 7px;">Disappearing messages</p>
+                <p style="font-size: 13.5px; margin-top: 7px;">Off</p>
+                <p style="font-size: 13.5px; margin-top: 7px;">Mute notifications</p>
+                <div class="mute">
+                  <i class="fa-solid fa-volume-xmark"></i>
+                  <p>Mute</p>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <p style="font-size: 14px; margin-top: 15px;">Notification tone</p>
+                <div class="tone">
+                  <i class="fa-solid fa-play"></i>
+                  <div class="def">
+                    <i class="fa-solid fa-music"></i>
+                    <p>Default</p>
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <img src="" id="mydp">
+            <div class="name">
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+          <span id="magnifyingglass"></span>
+        </div>
+
+        <!-- WhatsApp chatting area  -->
+        <div class="user-chat">
+          <div class="user-encryptmessage">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p id="main-date"></p>
+            <div class="default-format">
+              <i class="fa-brands fa-whatsapp" id="bigWhats"></i>
+              <p id="defaultP1">WhatsApp for windows</p>
+              <p id="defaultP2">Send and receive messages without keeping your phone online.</p>
+              <p id="defaultP3">Use WhatsApp on up to 4 linked device and 1 phone at the same time.</p>
+            </div>
+            <p id="End-to-end"><i class="fa-solid fa-lock"></i>End-to-end encrypted</p>
+            <ul id="user-messages">
+            </ul>
+          </div>
+        </div>
+
+        <!-- WhatsApp main body footer -->
+        <div class="inputs">
+            <i class="fa-regular fa-face-smile"></i>
+            <i class="fa-solid fa-paperclip"></i>
+            <input type="text" name="text" id="user-input" placeholder="Type a message">
+            <div id="fa-microphone"><i class="fa-solid fa-microphone"></i></div>
+        </div>
+      </div>
+  </section>
+</body>
+</html>
